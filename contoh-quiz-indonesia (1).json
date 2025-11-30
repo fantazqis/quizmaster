@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "Apa ibu kota Indonesia?",
+    "choices": ["Jakarta", "Bandung", "Surabaya", "Medan"],
+    "answer": "Jakarta",
+    "explanation": "Jakarta adalah ibu kota Indonesia sejak kemerdekaan tahun 1945."
+  },
+  {
+    "id": 2,
+    "question": "Siapa presiden pertama Indonesia?",
+    "choices": ["Soeharto", "Soekarno", "BJ Habibie", "Megawati"],
+    "answer": "Soekarno",
+    "explanation": "Ir. Soekarno menjadi presiden pertama Indonesia dari tahun 1945-1967."
+  },
+  {
+    "id": 3,
+    "question": "Berapa jumlah pulau di Indonesia?",
+    "choices": ["13.000", "15.000", "17.000", "19.000"],
+    "answer": "17.000",
+    "explanation": "Indonesia memiliki lebih dari 17.000 pulau, menjadikannya negara kepulauan terbesar di dunia."
+  },
+  {
+    "id": 4,
+    "question": "Apa mata uang Indonesia?",
+    "choices": ["Ringgit", "Rupiah", "Peso", "Baht"],
+    "answer": "Rupiah",
+    "explanation": "Rupiah (IDR) adalah mata uang resmi Indonesia sejak tahun 1946."
+  },
+  {
+    "id": 5,
+    "question": "Gunung tertinggi di Indonesia adalah?",
+    "choices": ["Gunung Semeru", "Gunung Rinjani", "Puncak Jaya", "Gunung Merapi"],
+    "answer": "Puncak Jaya",
+    "explanation": "Puncak Jaya di Papua memiliki ketinggian 4.884 meter di atas permukaan laut."
+  },
+  {
+    "id": 6,
+    "question": "Hari kemerdekaan Indonesia diperingati pada tanggal?",
+    "choices": ["17 Agustus", "1 Juni", "20 Mei", "30 September"],
+    "answer": "17 Agustus",
+    "explanation": "Indonesia memproklamirkan kemerdekaan pada tanggal 17 Agustus 1945."
+  },
+  {
+    "id": 7,
+    "question": "Candi Borobudur terletak di provinsi?",
+    "choices": ["Jawa Timur", "Jawa Tengah", "Jawa Barat", "Yogyakarta"],
+    "answer": "Jawa Tengah",
+    "explanation": "Candi Borobudur berada di Magelang, Jawa Tengah dan merupakan candi Buddha terbesar di dunia."
+  },
+  {
+    "id": 8,
+    "question": "Pancasila memiliki berapa sila?",
+    "choices": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Pancasila adalah dasar negara Indonesia yang terdiri dari 5 sila."
+  },
+  {
+    "id": 9,
+    "question": "Komodo, hewan endemik Indonesia, dapat ditemukan di?",
+    "choices": ["Bali", "Nusa Tenggara Timur", "Kalimantan", "Sulawesi"],
+    "answer": "Nusa Tenggara Timur",
+    "explanation": "Komodo hidup di Pulau Komodo dan beberapa pulau sekitarnya di Nusa Tenggara Timur."
+  },
+  {
+    "id": 10,
+    "question": "Bahasa resmi Indonesia adalah?",
+    "choices": ["Bahasa Jawa", "Bahasa Melayu", "Bahasa Indonesia", "Bahasa Sunda"],
+    "answer": "Bahasa Indonesia",
+    "explanation": "Bahasa Indonesia ditetapkan sebagai bahasa resmi sejak Sumpah Pemuda 1928."
+  }
+]

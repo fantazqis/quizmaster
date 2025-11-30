@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "What is 2 + 2?",
+    "choices": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Basic addition: 2 plus 2 equals 4."
+  },
+  {
+    "id": 2,
+    "question": "Which programming language is known as the 'language of the web'?",
+    "choices": ["Python", "Java", "JavaScript", "C++"],
+    "answer": "JavaScript",
+    "explanation": "JavaScript runs in web browsers and is essential for web development."
+  },
+  {
+    "id": 3,
+    "question": "What does HTML stand for?",
+    "choices": ["Hyper Text Markup Language", "High Tech Modern Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language"],
+    "answer": "Hyper Text Markup Language",
+    "explanation": "HTML is the standard markup language for creating web pages."
+  },
+  {
+    "id": 4,
+    "question": "What year was the first iPhone released?",
+    "choices": ["2005", "2006", "2007", "2008"],
+    "answer": "2007",
+    "explanation": "Apple released the first iPhone on June 29, 2007."
+  },
+  {
+    "id": 5,
+    "question": "What is the largest mammal in the world?",
+    "choices": ["African Elephant", "Blue Whale", "Giraffe", "Polar Bear"],
+    "answer": "Blue Whale",
+    "explanation": "The blue whale can grow up to 100 feet long and weigh up to 200 tons."
+  }
+]
