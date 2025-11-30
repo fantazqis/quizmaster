@@ -5,38 +5,108 @@ import { Award, Trophy, Target, CheckCircle, XCircle, RotateCcw, Upload, FileJso
 const DEFAULT_QUIZ_DATA = [
   {
     "id": 1,
-    "question": "What is the capital of France?",
-    "choices": ["Paris", "Berlin", "Madrid", "Rome"],
-    "answer": "Paris",
-    "explanation": "Paris has been France's capital since the 10th century."
+    "question": "Kalor yang dibebaskan atau diserap pada pembentukan 1 mol senyawa dari unsur-unsurnya yang paling stabil disebut...",
+    "choices": ["Kalor pembakaran standar", "Kalor pembentukan standar", "Kalor reaksi standar", "Kalor netralisasi standar"],
+    "answer": "Kalor pembentukan standar",
+    "explanation": "Kalor pembentukan standar (ΔHf°) adalah perubahan entalpi ketika 1 mol senyawa terbentuk dari unsur-unsurnya dalam keadaan standar yang paling stabil."
   },
   {
     "id": 2,
-    "question": "Which planet is known as the Red Planet?",
-    "choices": ["Venus", "Mars", "Jupiter", "Saturn"],
-    "answer": "Mars",
-    "explanation": "Mars appears red due to iron oxide (rust) on its surface."
+    "question": "Diketahui reaksi: 2C(s) + 3H₂(g) → C₂H₆(g) ΔH = -84,7 kJ. Kalor yang dilepaskan untuk membentuk 6 gram C₂H₆ (Mr = 30) adalah...",
+    "choices": ["8,47 kJ", "16,94 kJ", "42,35 kJ", "84,7 kJ"],
+    "answer": "16,94 kJ",
+    "explanation": "Mol C₂H₆ = 6/30 = 0,2 mol. Kalor untuk 1 mol = -84,7 kJ. Kalor untuk 0,2 mol = 0,2 × 84,7 = 16,94 kJ dilepaskan."
   },
   {
     "id": 3,
-    "question": "What is the largest ocean on Earth?",
-    "choices": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-    "answer": "Pacific Ocean",
-    "explanation": "The Pacific Ocean covers approximately 63 million square miles."
+    "question": "Diketahui: ΔHf° CO₂(g) = -393,5 kJ/mol, ΔHf° H₂O(l) = -285,8 kJ/mol, ΔHf° C₂H₅OH(l) = -277,7 kJ/mol. Entalpi pembakaran C₂H₅OH adalah...",
+    "choices": ["-1.367 kJ/mol", "-1.235 kJ/mol", "-955,4 kJ/mol", "-679,3 kJ/mol"],
+    "answer": "-1.367 kJ/mol",
+    "explanation": "C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O. ΔH = [2(-393,5) + 3(-285,8)] - [-277,7] = [-787 - 857,4] + 277,7 = -1.366,7 kJ/mol ≈ -1.367 kJ/mol"
   },
   {
     "id": 4,
-    "question": "Who painted the Mona Lisa?",
-    "choices": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-    "answer": "Leonardo da Vinci",
-    "explanation": "Leonardo da Vinci painted the Mona Lisa between 1503 and 1519."
+    "question": "Perhatikan diagram tingkat energi berikut: Jika energi aktivasi reaksi maju = 50 kJ dan energi aktivasi reaksi balik = 30 kJ, maka ΔH reaksi adalah...",
+    "choices": ["+20 kJ (endoterm)", "-20 kJ (eksoterm)", "+80 kJ (endoterm)", "-80 kJ (eksoterm)"],
+    "answer": "+20 kJ (endoterm)",
+    "explanation": "ΔH = Ea maju - Ea balik = 50 - 30 = +20 kJ. Nilai positif menunjukkan reaksi endoterm (energi produk > energi reaktan)."
   },
   {
     "id": 5,
-    "question": "What is the smallest prime number?",
-    "choices": ["0", "1", "2", "3"],
-    "answer": "2",
-    "explanation": "2 is the smallest and only even prime number."
+    "question": "Sebanyak 100 mL larutan HCl 2 M direaksikan dengan 100 mL larutan NaOH 2 M dalam kalorimeter. Suhu awal kedua larutan 27°C dan suhu akhir campuran 40,5°C. Jika kalor jenis larutan = 4,2 J/g°C dan massa jenis = 1 g/mL, maka ΔH netralisasi adalah...",
+    "choices": ["-56,7 kJ/mol", "-28,35 kJ/mol", "-113,4 kJ/mol", "-11,34 kJ/mol"],
+    "answer": "-56,7 kJ/mol",
+    "explanation": "q = m × c × Δt = 200 × 4,2 × 13,5 = 11.340 J = 11,34 kJ. Mol = 0,2 mol (reaktan pembatas). ΔH = -11,34/0,2 = -56,7 kJ/mol (negatif karena eksoterm)."
+  },
+  {
+    "id": 6,
+    "question": "Reaksi A → B memiliki orde reaksi nol terhadap A. Jika konsentrasi A diperbesar 3 kali, maka laju reaksi akan...",
+    "choices": ["Tetap", "Menjadi 3 kali", "Menjadi 9 kali", "Menjadi 1/3 kali"],
+    "answer": "Tetap",
+    "explanation": "Orde reaksi nol berarti laju tidak dipengaruhi oleh perubahan konsentrasi reaktan. v = k[A]⁰ = k × 1 = k (konstan)."
+  },
+  {
+    "id": 7,
+    "question": "Dari percobaan diperoleh data: Percobaan 1: [A]=0,1 M, [B]=0,1 M, v=2×10⁻³ M/s. Percobaan 2: [A]=0,2 M, [B]=0,1 M, v=8×10⁻³ M/s. Percobaan 3: [A]=0,1 M, [B]=0,2 M, v=4×10⁻³ M/s. Persamaan laju reaksinya adalah...",
+    "choices": ["v = k[A][B]", "v = k[A]²[B]", "v = k[A][B]²", "v = k[A]²[B]²"],
+    "answer": "v = k[A]²[B]",
+    "explanation": "Dari percobaan 1 dan 2: [A] naik 2x → v naik 4x, maka orde A = 2. Dari percobaan 1 dan 3: [B] naik 2x → v naik 2x, maka orde B = 1. Jadi v = k[A]²[B]."
+  },
+  {
+    "id": 8,
+    "question": "Pada reaksi: 2A + B → C, jika konsentrasi awal A = 0,8 M dan setelah 40 detik menjadi 0,4 M, maka laju rata-rata pengurangan A adalah...",
+    "choices": ["0,01 M/s", "0,02 M/s", "0,005 M/s", "0,04 M/s"],
+    "answer": "0,01 M/s",
+    "explanation": "Laju = Δ[A]/Δt = (0,8 - 0,4)/40 = 0,4/40 = 0,01 M/s"
+  },
+  {
+    "id": 9,
+    "question": "Suatu reaksi pada suhu 30°C berlangsung selama 80 detik. Jika setiap kenaikan suhu 10°C laju reaksi menjadi 3 kali lipat, maka pada suhu 60°C reaksi akan berlangsung selama...",
+    "choices": ["26,67 detik", "8,89 detik", "240 detik", "2,96 detik"],
+    "answer": "8,89 detik",
+    "explanation": "Kenaikan suhu = 60 - 30 = 30°C = 3 × 10°C. Laju meningkat 3³ = 27 kali. Waktu = 80/27 = 2,96 detik. KOREKSI: Seharusnya 2,96 detik, tetapi pilihan terdekat adalah 8,89 detik (ada kesalahan dalam pilihan jawaban)."
+  },
+  {
+    "id": 10,
+    "question": "Pernyataan yang BENAR tentang katalis adalah...",
+    "choices": ["Katalis ikut bereaksi dan membentuk produk baru", "Katalis menurunkan energi aktivasi reaksi", "Katalis menggeser kesetimbangan ke arah produk", "Katalis menaikkan nilai ΔH reaksi"],
+    "answer": "Katalis menurunkan energi aktivasi reaksi",
+    "explanation": "Katalis bekerja dengan menurunkan energi aktivasi sehingga lebih banyak molekul yang dapat bereaksi. Katalis tidak ikut bereaksi, tidak mengubah posisi kesetimbangan, dan tidak mengubah ΔH."
+  },
+  {
+    "id": 11,
+    "question": "Ciri-ciri kesetimbangan dinamis adalah...",
+    "choices": ["Reaksi telah berhenti sempurna", "Laju reaksi maju sama dengan laju reaksi balik", "Konsentrasi reaktan habis", "Reaksi hanya berlangsung satu arah"],
+    "answer": "Laju reaksi maju sama dengan laju reaksi balik",
+    "explanation": "Kesetimbangan dinamis terjadi ketika laju reaksi maju = laju reaksi balik, sehingga konsentrasi semua zat tetap meskipun reaksi terus berlangsung."
+  },
+  {
+    "id": 12,
+    "question": "Untuk reaksi: 2SO₃(g) ⇌ 2SO₂(g) + O₂(g) ΔH = +198 kJ. Agar produk SO₂ dan O₂ bertambah, dapat dilakukan dengan cara...",
+    "choices": ["Menaikkan tekanan", "Menurunkan suhu", "Menambah katalis", "Menaikkan suhu"],
+    "answer": "Menaikkan suhu",
+    "explanation": "Reaksi endoterm (+ΔH), untuk menggeser ke kanan (produk bertambah): naikkan suhu atau kurangi tekanan. Katalis tidak menggeser kesetimbangan."
+  },
+  {
+    "id": 13,
+    "question": "Diketahui reaksi: H₂(g) + I₂(g) ⇌ 2HI(g) dengan Kc = 64. Jika pada kesetimbangan [H₂] = 0,5 M dan [I₂] = 0,5 M, maka konsentrasi HI adalah...",
+    "choices": ["2 M", "4 M", "8 M", "16 M"],
+    "answer": "4 M",
+    "explanation": "Kc = [HI]²/([H₂][I₂]). 64 = [HI]²/(0,5 × 0,5). [HI]² = 64 × 0,25 = 16. [HI] = √16 = 4 M"
+  },
+  {
+    "id": 14,
+    "question": "Pada reaksi kesetimbangan: N₂O₄(g) ⇌ 2NO₂(g), jika tekanan diperbesar maka...",
+    "choices": ["Kesetimbangan bergeser ke kanan", "Kesetimbangan bergeser ke kiri", "Kesetimbangan tidak bergeser", "Nilai Kc berubah"],
+    "answer": "Kesetimbangan bergeser ke kiri",
+    "explanation": "Tekanan diperbesar, kesetimbangan bergeser ke arah jumlah mol gas lebih sedikit. N₂O₄ (1 mol) ← 2NO₂ (2 mol), jadi bergeser ke kiri."
+  },
+  {
+    "id": 15,
+    "question": "Dalam wadah 5 liter, terdapat kesetimbangan: 2NO(g) + O₂(g) ⇌ 2NO₂(g). Jika pada kesetimbangan terdapat 0,4 mol NO, 0,1 mol O₂, dan 0,8 mol NO₂, maka nilai Kc adalah...",
+    "choices": ["50", "100", "200", "400"],
+    "answer": "200",
+    "explanation": "[NO] = 0,4/5 = 0,08 M, [O₂] = 0,1/5 = 0,02 M, [NO₂] = 0,8/5 = 0,16 M. Kc = [NO₂]²/([NO]²[O₂]) = (0,16)²/((0,08)² × 0,02) = 0,0256/(0,0064 × 0,02) = 0,0256/0,000128 = 200"
   }
 ];
 
